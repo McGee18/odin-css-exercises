@@ -27,6 +27,20 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+/* Set animation, time animation takes, and action. */
+  animation: expand 1500ms ease-in-out;
+  transform-origin: top;
 }
 
-
+/* Specifics of animation key frame - open/transform list to 100% of size, scale to go past full size to bounce back.*/
+@keyframes expand {
+  0% { 
+    transform: scaleY(0);
+}
+  70% {
+    transform: scaleY(1.2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

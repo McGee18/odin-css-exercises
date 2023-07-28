@@ -16,4 +16,11 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+
+  /* Adds in change of shape, time and style. */
+  transition: transform .3s ease-in-out;
+}
+/* Adds transfer scale on hover */
+button:hover {
+  transform: scale(1.2);
 }
