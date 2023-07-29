@@ -3,6 +3,13 @@
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+  
+  /* Sets type of positioning. */
+  display: flex;
+  /* AI aligns on vertical access of container. */
+  align-items: center;
+  /* JC aligns on horizontal axis of container.*/
+  justify-content: center;
 }
 
 .box {

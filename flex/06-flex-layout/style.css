@@ -5,7 +5,12 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
-}
+
+  /* Add display flex and flex direction as column */
+  display: flex;
+  flex-direction: column;
+
+} 
 
 img {
   width: 600px;
@@ -16,6 +21,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  /* Add padding to the button, 8px, 18px */
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +32,45 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* Add style for content div */
+.content {
+/* Style - flex, dispaly, align-items, justify-content, flex direction. */
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+/* Create style for the hyperlink list item format */
+a {
+  /* Change text color to black and remove underline from hyperlink in list items. */
+  color: black;
+  text-decoration: none;
+}
+
+/* Create style for the header and footer to position and add padding from page margin. */
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* Add footer specific formatting - background color should be light grey */
+.footer {
+  background: lightgray;
+}
+
+/* Add format for unordered list - to move the links into the correct position. */
+ul {
+  /* Add flex, remove default margin and padding for unordered list and add a gap  between each item. */
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  /* Remove bullet points from unordered list */
+  list-style: none;
 }

@@ -1,5 +1,8 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+
+  /* Add to align all items by center in body */
+text-align: center;
 }
 
 img {
@@ -10,6 +13,25 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+
+  /* Add to set bottom margin of Information title to larger (shifts container content down.*/
+  margin-bottom: 32px;
+}
+
+/* Add in .container command now all info grouped in div container.*/
+.container {
+  /* Set the flex to bring all content together on one line */
+  display: flex;
+  /* Add justify content to centre the content horizontally. */
+  justify-content: center;
+  /* Add gap between content on line */
+  gap: 50px;
+}
+
+/* Add info now each piece of content in info div. */
+.info {
+  /* Set max width to not stretch images due to browser changes. */
+  max-width: 200px;
 }
 
 /* do not edit this footer */

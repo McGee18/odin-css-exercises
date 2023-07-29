@@ -12,6 +12,11 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  /* Set header as flex and space horizontally between each with some padding from the margins. */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .profile-image {
@@ -45,4 +50,16 @@ a {
 
 ul {
   list-style-type: none;
+
+/* Align links in list flex center and add a gap between each. */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.leftofflex,
+.rightofflex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }

@@ -20,6 +20,13 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /* Add in flex to move modal div group*/
+  display: flex;
+  /* Added gap between content */
+  gap: 16px;
+  /* Add in modal  padding from margin to add space between content and margin */
+  padding: 16px;
 }
 
 .icon {
@@ -33,6 +40,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Add flex shrink to stop the icon from getting 'smashed' (shrink to fit to size of container. */
+  flex-shrink: 0;
+}
+
+/* Add in header formats now wrapped around header and button */
+.header {
+  /* Add in flex to align */
+  display: flex;
+  /* Align the items centrally */
+  align-items: center;
+  /* Add in horizontal spacing */
+  justify-content: space-between;
+  /* Change the font size to 18px */
+  font-size: 18px;
+  /* Increase the bold of the text to 700 */
+  font-weight: 700;
+  /* Add a bigger bottom margin of the header div - 8px */
+  margin-bottom: 8px;
+}
+
+/* Add a text div style */
+.text {
+  /* Add a bottom margin to the text to add space between text and buttons.*/
+  margin-bottom: 16px;
 }
 
 .close-button {

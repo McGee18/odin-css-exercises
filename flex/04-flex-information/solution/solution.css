@@ -1,5 +1,8 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  
+  /* Add to align all items by center in body */
+  text-align: center;
 }
 
 img {
