@@ -2,28 +2,101 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+
+  /* Add display and flex direction */
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
-}
+  
+  /* Add in display and flex direction */
+  display: flex;
+  align-items: center;
 
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+  /* Add in padding from left so header more central & change the font size (32px) and weight (900) */
+  padding: 0 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+/* Create style for body  div - add flex value and display. */
+.body {
+  flex: 1;
+  display: flex;
+
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+
+  /* Add flex shrink and padding */
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+/* Create unordered list formatting */
+ul {
+  /* Remove bullet points */
+  list-style-type: none;
+
+  /* Remove default margin and padding from u-list */
+  margin: 0;
+  padding: 0;
+}
+
+/* Format list items */
+li {
+  /* Adjust margin from bottom of list items (spaces out) */
+  margin-bottom: 16px;
+}
+
+/* Style list text and symbols (a) */
+a {
+  /* Colour white */
+  color: white;
+
+/* Remove underline from hyperlink */
+  text-decoration: none;
+
+/* Change text font size to 24px */
+  font-size: 24px;
+  }
+
+/* Format container of text cards */
+.container {
+  /* Add display and flex wrap */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Add padding to move list away from margin */
+  padding: 32px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+
+  /* Add padding to separate each individual  text card.*/
+  padding: 16px;
+  /* Increase thickness of margin to further separate each card. */
+  margin: 16px;
+  /* Set thw width of each card to 300px */
+  width: 300px;
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+
+  /* Add display flex, align items to the centre and justify content to center. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
