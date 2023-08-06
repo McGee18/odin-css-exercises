@@ -7,21 +7,42 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+
+  /* Added in 8px gap between card and content (padding). */
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  /* Make title font size 16px */
+  font-size: 16px;
+
+  /* Added 8px gap between title text and edge of title section. */
+  padding: 8px;
+
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .content {
   background: #e3f4ff;
+
+  margin-bottom: 8px;
+  padding: 16px 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+
+  text-align: center;
+  padding: 8px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+
+  display: block;
+  margin: 0 auto;
+  padding: 8px 24px;
 }
